@@ -1,0 +1,5 @@
+- name: ping
+  hosts: web
+  tasks: #lists of tasks/modules/collections
+  - name: pinging the server
+    ansibile.builtin.ping:
