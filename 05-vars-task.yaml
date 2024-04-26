@@ -7,7 +7,7 @@
   tasks: 
   - name: print override information
     vars: # Task level variables
-      course: "Terraform"
+      course: "DevOps"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{course}} from Trainer {{Trainer}}, Duration is {{Duration}}"
 
