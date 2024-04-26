@@ -11,7 +11,12 @@
     ansible.builtin.debug:
       msg: "User info: {{USER}}"
 
+  - name: create user
+    ansible.builtin.command: useradd expense
+    when: USER.rc != 0 # condition
+
   - name: say Hello
     ansible.builtin.debug:
      msg: "Hello"
-    
+
+# rc != 0 means previous exit status is zero
